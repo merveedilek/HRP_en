@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>HRP</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons
+    ================================================== -->
+    @*<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />*@
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/favicon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/favicon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/favicon-54x54.png">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="~/Content/css/animate.css">
+    <!-- Prettyphoto -->
+    <link rel="stylesheet" href="~/Content/css/prettyPhoto.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.css">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="~/Content/css/flexslider.css">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="~/Content/css/cd-hero.css">
+    <!-- Style Swicther -->
+    <link id="style-switch" href="~/Content/css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onresize="myFunction()" style="background-color:Rgb(245,245,245)">
+
+    <div class="body-inner">
+        <!-- Header start -->
+        <header id="header" class="navbar-fixed-top header2" role="banner">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo start -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="/Home/index">
+                                <img class="img-responsive logo" src="~/Content/images/HRP/hrp-logo.png" alt="logo" >
+                            </a>
+                        </div>
+                    </div><!--/ Logo end -->
+                    <nav class="collapse navbar-collapse clearfix" role="navigation">
+                        <ul class="nav navbar-nav navbar-right" style="margin-top:-38px">
+                            <li class="dropdown active">
+                                @*<a href='@Url.Action("Index","Home")' class="dropdown-toggle active" data-toggle="dropdown">Anasayfa <i class="fa fa-angle-down"></i></a>*@
+                                @Html.ActionLink("Home", "Index", new
+                           {
+                               @class = "active"
+                           })
+                            </li>
+                            <li class="dropdown">
+                                @*<a href="/Home/About" class="dropdown-toggle" data-toggle="dropdown">Hakkımızda<i class="fa fa-angle-down"></i></a>*@
+                                @Html.ActionLink("About Us", "About")
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>@Html.ActionLink("Garden Furniture", "BahceMobilyalari")</li>
+                                        <li>@Html.ActionLink("Indoor Furniture", "IcMekanMobilyalari")</li>
+                                        <li>@Html.ActionLink(" Accessories", "Aksesuarlar")</li>
+                                        <li>@Html.ActionLink("Lighting Products", "AydinlatmaUrunleri")</li>
+                                        <li>@Html.ActionLink("Urban Furniture", "KentMobilyalari")</li>
+                                        <li>@Html.ActionLink("Complementary Products", "TamamlayiciUrunler")</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                @Html.ActionLink(" GALLERY", "Galeri")
+                            </li>
+                            <li>@Html.ActionLink(" CONTACT", "iletisim")</li>
+                        </ul>
+                    </nav><!--/ Navigation end -->
+                </div><!--/ Row end -->
+            </div><!--/ Container end -->
+        </header><!--/ Header end -->
+        @RenderBody()
+        <!-- Footer start -->
+        <footer id="footer" class="footer footer2">
+            <div class="container" style="width:80%">
+
+                <div class="row">
+
+                    <div class="col-md-4 col-xs-12 col-lg-4 col-xl-4 col-sm-12 footer-widget logoText">
+
+                        <div class="img-container logoText" style="margin-top:40px">
+
+                            <a class="thumb-holder" href="/Home/index">
+                                <img class="hrplogo" src="~/Content/images/HRP/hrp-logo.png" alt="" style="width:100%; height:auto; object-fit:cover; ">
+                            </a>
+                        </div>
+
+
+
+                    </div><!--/ end flickr -->
+
+                    <div class="col-md-4 col-xs-12 col-lg-4 col-xl-4 col-sm-12 footer-widget" style="padding-right: 0px !important">
+                        <h3 class="widget-title"> SITE LINKS</h3>
+
+                        <ul class="unstyled arrow">
+                            <li><a href="/Home/About">About Us</a></li>
+                            <li><a href="/Home/BahceMobilyalari">Garden Furniture</a></li>
+                            <li><a href="/Home/IcMekanMobilyalari"> Indoor Furniture</a></li>
+                            <li><a href="/Home/Aksesuarlar">Accessories</a></li>
+                            <li><a href="/Home/AydinlatmaUrunleri">Lighting Products</a></li>
+                            <li><a href="/Home/KentMobilyalari">Urban Furniture</a></li>
+                            <li><a href="/Home/TamamlayiciUrunler">Complementary Products</a></li>
+                            <li><a href="/Home/Galeri">Gallery</a></li>
+                            <li><a href="/Home/iletisim">Contact</a></li>
+                        </ul>
+
+                    </div><!--/ End Recent Posts-->
+
+
+                    <div class="col-md-4 col-xs-12 col-lg-4 col-xl-4 col-sm-12 footer-widget footer-about-us">
+                        <h3 class="widget-title">ADDRESS</h3>
+                        <p style="color:#2a5685">Metal Mühendislik Makine Sanayi ve Tic.Ltd.Şti.</p>
+                        <p style="color:#2a5685">
+                            Karaağaç Mah. Hadımköy
+                            İstanbul Cad. No:5
+                            Büyükçekmece / İstanbul
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong style="color:#2a5685">Email: </strong>
+                                <p style="color:#2a5685">info@metalmuhendislik.com.tr</p>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <strong style="color:#2a5685">Telephone:</strong>
+                                <p style="color:#2a5685">+90 (212) 871 22 77</p>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <strong style="color:#2a5685">Fax:</strong>
+                                <p style="color:#2a5685">+90 (212) 871 16 96</p>
+                            </div>
+                        </div>
+
+                    </div><!--/ end about us -->
+
+
+
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </footer><!-- Footer end -->
+        <!-- Footer start -->
+        <section id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright-info col-md-12 text-center" style="color:#0a3665">
+                        &copy; Copyright 2020 HRP.
+                    </div>
+                </div><!--/ Row end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                    <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+                </div>
+            </div><!--/ Container end -->
+        </section><!--/ Footer end -->
+        <!-- Javascript Files
+    ================================================== -->
+        <!-- initialize jQuery Library -->
+        <script type="text/javascript" src="~/Content/js/jquery.js"></script>
+        <!-- Bootstrap jQuery -->
+        <script type="text/javascript" src="~/Content/js/bootstrap.min.js"></script>
+        <!-- Style Switcher -->
+        <script type="text/javascript" src="~/Content/js/style-switcher.js"></script>
+        <!-- Owl Carousel -->
+        <script type="text/javascript" src="~/Content/js/owl.carousel.js"></script>
+        <!-- PrettyPhoto -->
+        <script type="text/javascript" src="~/Content/js/jquery.prettyPhoto.js"></script>
+        <!-- Bxslider -->
+        <script type="text/javascript" src="~/Content/js/jquery.flexslider.js"></script>
+        <!-- CD Hero slider -->
+        <script type="text/javascript" src="~/Content/js/cd-hero.js"></script>
+        <!-- Isotope -->
+        <script type="text/javascript" src="~/Content/js/isotope.js"></script>
+        <script type="text/javascript" src="~/Content/js/ini.isotope.js"></script>
+        <!-- Wow Animation -->
+        <script type="text/javascript" src="~/Content/js/wow.min.js"></script>
+        <!-- SmoothScroll -->
+        <script type="text/javascript" src="~/Content/js/smoothscroll.js"></script>
+        <!-- Eeasing -->
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <!-- Counter -->
+        <script type="text/javascript" src="~/Content/js/jquery.counterup.min.js"></script>
+        <!-- Waypoints -->
+        <script type="text/javascript" src="~/Content/js/waypoints.min.js"></script>
+        <!-- Template custom -->
+        <script type="text/javascript" src="~/Content/js/custom.js"></script>
+        <script>
+            var dizi = document.getElementsByClassName("foto");
+            //for (var i = 0; i < dizi.length; i++) {
+            //    dizi[i].style.height = (dizi[i].clientWidth * 0.6).toString() + "px";
+            //}
+
+            function myFunction() {
+
+                var dizi = document.getElementsByClassName("foto");
+                for (var i = 0; i < dizi.length; i++) {
+                    dizi[i].style.height = (dizi[i].clientWidth * 0.6).toString() + "px";
+                }
+            }
+        </script>
+    </div><!-- Body inner end -->
+</body>
+</html>

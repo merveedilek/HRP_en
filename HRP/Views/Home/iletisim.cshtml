@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div id="banner-area" style="width:80%; margin:auto; height:auto">
+        <img class="foto" src="~/Content/images/banner/contact.jpg" alt="" style="width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: 20% 15%" />
+        <div class="parallax-overlay"></div>
+        <!-- Subpage title start -->
+        <div class="banner-title-content yazi">
+            <div class="text-center">
+                <h2 class="yazi">CONTACT US</h2>
+            </div>
+        </div><!-- Subpage title end -->
+    </div><!-- Banner area end -->
+</div>
+<!-- Main container start -->
+<div class="container">
+    <section id="main-container"  class="portfolio portfolio-box" style="margin:auto!important; width:80%">
+
+        <div class="row">
+            <div class="col-md-7 col-xs-12 col-sm-12 col-xl-7 col-lg-7">
+
+                @using (Html.BeginForm("iletisim", "Home", FormMethod.Post, new { @id = "contact-form" }))
+                {
+
+                    <div class="row">
+                        <div class="col-md-4" style="width:330px">
+                            <div class="form-group">
+                                <label style="color:red">Name</label>
+                                <input class="form-control" name="Ad" id="name" placeholder="Please enter your name" type="text" required>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-md-4" style="width:330px; margin-top:10px;margin-right:250px">
+                            <div class="form-group">
+                                <label style="color:red">E-Mail</label>
+                                <input class="form-control" name="Mail" id="email"
+                                       placeholder="Please write your e-mail address" type="email" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label style="color:red">Message</label>
+                        <textarea class="form-control" name="Mesaj" id="message" placeholder="Your Message" rows="10" required></textarea>
+                    </div>
+                    <div class="text-right">
+                        <br>
+                        <button class="btn btn-primary solid blank" type="submit">Submit</button>
+                    </div>
+                }
+            </div>
+            <div class="col-md-5 col-xs-12 col-sm-12 col-xl-5 col-lg-5">
+                <div class="contact-info">
+                    <h3>CONTACT INFORMATION</h3>
+                    <p>Metal Mühendislik Makine Sanayi ve Tic.Ltd.Şti.</p>
+                    <br>
+                    <p>
+                        <i class="fa fa-home info"></i> Karaağaç Mah.
+                        Hadımköy <br />
+                        İstanbul Cad. No:5 <br />
+                        Büyükçekmece / İstanbul
+                    </p>
+                    <p><i class="fa fa-phone info"></i><a href="tel:#" style="color: black">(0212) 871 22 77 </a></p>
+                    <p><i class="fa fa-fax info"></i> <a href="tel:#" style="color:black">(0212) 871 16 96 </a></p>
+                    <p><i class="fa fa-envelope-o info"></i><a href="mailto:#" style="color:black"> info@metalmuhendislik.com.tr</a></p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-md-12" style="margin-top:20px; text-align:center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.176414028026!2d28.626795315376693!3d41.08699197929287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b558ff01392f99%3A0x73fb7dfee59ca0f5!2sMetal%20M%C3%BChendislik!5e0!3m2!1sen!2str!4v1585865942965!5m2!1sen!2str" width="700" height="400" class="harita" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section><!--/ Main container end -->
+</div><!--/ container end -->

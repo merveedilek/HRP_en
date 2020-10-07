@@ -1,0 +1,218 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+}
+
+<!-- Slider start -->
+<section id="home" style="margin-top:-25px" class="no-padding">
+
+    <div id="main-slide" class="ts-flex-slider container">
+
+        <div class="flexSlideshow flexslider" style="width: 80%; margin: auto">
+            <ul class="slides">
+                <li>
+                    <div class="overlay2">
+                        <img class="foto" src="~/Content/images/HRP/anaresimler/bahce.jpg" alt="slider" style="width:100%; object-fit:fill">
+                    </div>
+                    <div class="flex-caption slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated2">
+                                GARDEN
+                            </h2>
+                            <h3 class="animated3">
+                                FURNITURE
+                            </h3>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay2">
+                        <img class="foto" src="~/Content/images/HRP/anaresimler/icMekanMobilya2.jpg" alt="slider" style="width:100%; object-fit:fill">
+                    </div>
+                    <div class="flex-caption slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated4">
+                                INDOOR
+                            </h2>
+                            <h3 class="animated5">
+                                FURNITURE
+                            </h3>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay2">
+                        <img class="foto" src="~/Content/images/slider/anaresimler/aksesuarlar.jpg" alt="slider" style="width:100%; object-fit:fill">
+                    </div>
+                    <div class="flex-caption slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated7">
+                               BATHROOM
+                            </h2>
+                            <h3 class="animated8">
+                                ACCESSORIES
+                            </h3>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay2">
+                        <img class="foto" src="~/Content/images/slider/anaresimler/aydınlatmaUrunler.jpg" alt="slider" style="width:100%; object-fit:fill">
+                    </div>
+                    <div class="flex-caption slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated4">
+                                LIGHTING
+                            </h2>
+                            <h3 class="animated5">
+                                PRODUCTS
+                            </h3>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay2">
+                        <img class="foto" src="~/Content/images/slider/anaresimler/kentmobilya.jpg" alt="slider" style="width:100%; object-fit:fill">
+                    </div>
+                    <div class="flex-caption slider-content">
+                        <div class="col-md-12 text-center">
+                            <h2 class="animated4">
+                                URBAN
+                            </h2>
+                            <h3 class="animated5">
+                                FURNITURE
+                            </h3>
+
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div><!--/ Main slider end -->
+</section> <!--/ Slider end -->
+<!-- Portfolio start -->
+<div class="container">
+    <section id="about portfolio " class="about angle portfolio portfolio-box">
+
+        <div class="row">
+            <div class="col-md-12 heading text-center">
+                <span class="icon-pentagon wow bounceIn"><i class="fa fa-suitcase"></i></span>
+                <h2 class="title2">
+                    PRODUCTS
+                    <span class="title-desc"></span>
+                </h2>
+            </div>
+        </div> <!-- Title row end -->
+        <!--Isotope filter start -->
+        <div class="container" style="width:80%">
+            <div class="row text-center">
+                <div class="isotope-nav">
+                    <ul>
+
+                        <li style="margin:7px">@Html.ActionLink("Garden Furniture", "BahceMobilyalari")</li>
+                        <li style="margin:7px">@Html.ActionLink("Indoor Furniture", "IcMekanMobilyalari")</li>
+                        <li style="margin:7px">@Html.ActionLink(" Accessories", "Aksesuarlar")</li>
+                        <li style="margin:7px">@Html.ActionLink("Lighting Products", "AydinlatmaUrunleri")</li>
+                        <li style="margin:7px">@Html.ActionLink("Urban Furniture", "KentMobilyalari")</li>
+                        <li style="margin:7px">@Html.ActionLink("Complementary Products", "TamamlayiciUrunler")</li>
+                    </ul>
+                </div>
+            </div><!-- Isotope filter end -->
+        </div>
+        <div class="container" style="width:80%">
+            <div class="row">
+                <div id="isotope" class="isotope">
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 web-design isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar" @*style="height:300px;"*@>
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/1-min.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Garden Furniture</h3>
+                                    <a class="link icon-pentagon" href="/Home/BahceMobilyalari"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/1-min.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 development isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar">
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/icMekanMobilya.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Indoor Furniture</h3>
+                                    <a class="link icon-pentagon" href="/Home/IcMekanMobilyalari"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/icMekanMobilya.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 joomla isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar">
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/aksesuarlar1.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Accesories</h3>
+                                    <a class="link icon-pentagon" href="/Home/Aksesuarlar"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/aksesuarlar.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 wordpress isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar">
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/aydınlatmaUrunler.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Lighting Products</h3>
+                                    <a class="link icon-pentagon" href="/Home/AydinlatmaUrunleri"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/aydınlatmaUrunler.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 joomla isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar">
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/kentmobilya.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Urban Furniture</h3>
+                                    <a class="link icon-pentagon" href="/Home/KentMobilyalari"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/kentmobilya.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+                    <div class="col-sm-12 col-lg-6 col-xs-12 col-md-6 col-xl-6 development isotope-item">
+                        <div class="grid">
+                            <figure class="effect-oscar">
+                                <img class="gorsel" src="~/Content/images/HRP/anaresimler/tamamlayiciurun1.jpg" alt="" style="width:100%; height:350px; object-fit:cover">
+                                <figcaption>
+                                    <h3>Complementary Products</h3>
+                                    <a class="link icon-pentagon" href="/Home/TamamlayiciUrunler"><i class="fa fa-link"></i></a>
+                                    <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/images/HRP/anaresimler/tamamlayiciurun1.jpg" style="object-fit:cover"><i class="fa fa-search"></i></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- Isotope item end -->
+
+
+
+
+                </div><!-- Isotope content end -->
+            </div><!-- Content row end -->
+        </div>
+
+    </section><!-- Portfolio end -->
+</div><!-- Container end -->
